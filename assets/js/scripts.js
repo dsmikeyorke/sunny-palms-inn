@@ -38,6 +38,33 @@ $(document).ready(function($) {
     controlNav: false
   });
 
+  // Typer
+  $(".typer").typer({
+    strings: [
+      "Family Vacation",
+      "Getaway",
+      "Anniversary",
+      "Adventure",
+      "Work Retreat",
+      "Honeymoon"
+    ],
+    typeSpeed: 40,
+    backspaceSpeed: 40,
+    backspaceDelay: 2250,
+    repeatDelay: 0,
+    repeat: true,
+    autoStart: true,
+    startDelay: 0,
+    useCursor: false
+
+  });
+
+  // Close mobile nav on click
+
+  $('#rm-removed a').click(function() {
+    $('.responsive-menus').removeClass('responsive-toggled');
+  });
+
   // Single Page Nav
   var headerHeight = $('#header').innerHeight() - 22;
   var headerHeightMobile = $('#header').innerHeight() - 14;
@@ -54,11 +81,5 @@ $(document).ready(function($) {
       filter: '[href^="/#"]'
     });
   }
-
-  // Close mobile nav on click
-
-  $('#rm-removed a').click(function() {
-    $('.responsive-menus').removeClass('responsive-toggled');
-  });
 
 }(jQuery));

@@ -1,0 +1,85 @@
+#contact {
+  position: relative;
+  background-color: #F7F9FA;
+}
+
+#contact .inner {
+  max-width: 960px;
+  padding: 56px 48px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#contact iframe {
+  width: 100%;
+}
+
+#contact .company-information {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+#contact .company-information > div h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+#contact .company-information > div h4:before {
+  margin-right: 8px;
+  font-family: 'FontAwesome';
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+#contact .company-information > div p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+#contact .company-information > div a,
+#contact .company-information > div p {
+  color: #3D474D;
+}
+
+#contact .company-information > div a {
+  text-decoration: none;
+}
+
+#contact .company-information > div a:hover {
+  color: #E6177A;
+}
+
+#contact .company-information .address h4:before {
+  content: '\f041';
+}
+
+#contact .company-information .email h4:before {
+  content: '\f003';
+}
+
+#contact .company-information .phone h4:before {
+  content: '\f095';
+}
+@media (min-width:48em) {
+
+
+
+  #contact .company-information > div {
+    display: table-cell;
+  }
+}
+@media (max-width:48em) {
+  #contact iframe {
+    height: 260px;
+  }
+
+  #contact .company-information > div {
+    margin-bottom: 18px;
+  }
+}

@@ -1,6 +1,6 @@
 {% assign rooms = site.rooms | sort:"order" %}
 <div id="rooms" class="r-tabs">
-  <h2>Room Options</h2>
+  <h2>Rooms</h2>
   <ul class="r-tabs-nav">
     {% for room in rooms %}
       <li><a href="#{{room.title | slugify}}">{{room.title}}</a> </li>

@@ -1,17 +1,19 @@
 <header id="header">
-  <div id="logo">
-    <a href="{{ site.baseurl }}/#top" title="Home" rel="home" class="current">
-      Sunny Palms Inn
-    </a>
+  <div class="container">
+    <h1 class="branding">
+      <a href="{{ site.baseurl }}/#top" title="Home" rel="home" class="current"> Sunny Palms Inn </a>
+    </h1>
+    <a href="#" class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <nav id="main-menu">
+      <ul class="menu">
+        <li><a href="/#about" title="" class="active">About</a></li>
+        <li><a href="/#gallery" title="" class="active">Photos</a></li>
+        <li><a href="/#rooms" title="" class="active">Rooms</a></li>
+        <li><a href="/#contact" title="" class="active">Contact</a></li>
+        <li>
+          <a href="{{ site.baseurl }}/booking" class="btn btn-sm btn-secondary"> Book Your Stay </a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <a href="#" class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
-  <nav id="main-menu">
-    <ul class="menu">
-      <li><a href="/#about" title="" class="active">About</a></li>
-      <li><a href="/#gallery" title="" class="active">Photos</a></li>
-      <li><a href="/#rooms" title="" class="active">Room Options</a></li>
-      <li><a href="/#contact" title="" class="active">Contact</a></li>
-      <li class="last leaf"><a href="{{ site.baseurl }}/booking">Book Now</a></li>
-    </ul>
-  </nav>
 </header>

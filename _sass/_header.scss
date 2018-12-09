@@ -1,0 +1,238 @@
+#header {
+  min-width: 320px;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+#header .container {
+  height: 88px;
+  max-width: 1216px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 48px;
+  margin: 0 auto;
+}
+
+#header .branding {
+  font-size: 28px;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: #3D474D;
+  }
+}
+
+#header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#header nav li {
+  font-size: 13px;
+  line-height: 1;
+  margin-left: 15px;
+  text-align: center;
+  display: inline-block;
+}
+
+#header nav li:first-child {
+  margin-left: 0;
+}
+
+#header nav a {
+  display: block;
+  text-decoration: none;
+  color: #3D474D;
+  font-weight: 600;
+}
+
+#header nav a.current {
+  color: #E6177A;
+}
+@media (min-width:60em) {
+  #header nav li {
+    margin-left: 32px;
+  }
+}
+@media (max-width:48em) {
+  #header .responsive-menus {
+    position: absolute;
+    left: 0;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    top: 58px;
+  }
+
+  #header .responsive-menus span.toggler {
+    font-size: 30px;
+    position: absolute;
+    top: -48px;
+    right: 20px;
+    color: #000;
+    border: 0;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+  }
+
+  #header .responsive-menus nav {
+    height: 100vh;
+    background-color: whitesmoke;
+    top: 100%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: top 0.5s ease;
+    -moz-transition: top 0.5s ease;
+    -o-transition: top 0.5s ease;
+    transition: top 0.5s ease;
+    display: block;
+  }
+
+  #header .responsive-menus nav li a {
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-top: -1px;
+    padding: 20px !important;
+    color: #212121;
+    border: 1px solid #e0e0e0;
+    background-color: whitesmoke;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    position: relative;
+  }
+
+  #header .responsive-menus nav li a:hover {
+    background-color: #E6177A;
+    color: #fff;
+  }
+
+  #header .responsive-menus nav li a:after {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    right: 20px;
+    font-size: 16px;
+    line-height: 0;
+    top: 50%;
+  }
+
+  #header .responsive-toggled nav {
+    top: 58px;
+  }
+}
+/* Mobile Menu */
+@media (min-width:40em) {
+  .menu-toggle {
+    display: none;
+  }
+}
+@media (max-width:39.99em) {
+  .menu-toggle {
+    font-size: 24px;
+    position: absolute;
+    right: 24px;
+    top: 12px;
+    color: #222;
+  }
+
+  #main-menu {
+    height: 100vh;
+    background-color: whitesmoke;
+    top: 100%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: top 0.5s ease;
+    -moz-transition: top 0.5s ease;
+    -o-transition: top 0.5s ease;
+    transition: top 0.5s ease;
+    display: block;
+  }
+
+  .main-menu-open {
+    overflow: hidden;
+  }
+
+  .main-menu-open #main-menu {
+    top: 58px;
+  }
+
+  #main-menu ul {
+    margin: 0;
+  }
+
+  #main-menu li {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    list-style: none;
+  }
+
+  #main-menu li a {
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-top: -1px;
+    padding: 20px !important;
+    color: #212121;
+    border: 1px solid #e0e0e0;
+    background-color: whitesmoke;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    position: relative;
+    text-align: left;
+  }
+
+  #main-menu li a:after {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    right: 20px;
+    font-size: 16px;
+    line-height: 0;
+    top: 50%;
+  }
+}

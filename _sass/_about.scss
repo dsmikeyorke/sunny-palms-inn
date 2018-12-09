@@ -1,0 +1,21 @@
+#about {
+  padding: 56px 48px;
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  font-size: 28px;
+}
+@media (min-width:48em) {
+  #about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #about .left,
+  #about .right {
+    width: 47.5%;
+  }
+}
