@@ -8,10 +8,9 @@
   max-width: 1216px;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding: 48px;
+  padding: 40px 24px;
   position: relative;
 }
-
 
 #footer .left ul {
   display: block;
@@ -88,7 +87,6 @@
   text-align: center;
 }
 
-
 #footer .right {
   text-align: center;
 }
@@ -123,6 +121,9 @@
   border-right: 0;
 }
 @media (min-width:48em) {
+  #footer .table {
+    padding: 48px;
+  }
 
   #footer .center,
   #footer .left,
@@ -207,18 +208,14 @@
     width: 100%;
   }
 
-  #footer .center a {
-    display: block;
-  }
-
   #footer .right {
     position: absolute;
-    top: 16px;
+    top: 40px;
     left: 0;
     width: 100%;
   }
 
   #footer .right img {
-    width: 150px;
+    width: 120px;
   }
 }

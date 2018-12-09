@@ -1,17 +1,30 @@
 #about {
-  padding: 56px 48px;
+  padding: 32px 24px 24px;
   max-width: 1216px;
   margin: 0 auto;
 }
 
 #about h2 {
-  font-size: 28px;
+  font-size: 21px;
+}
+
+#about .left {
+  margin-bottom: 16px;
 }
 @media (min-width:48em) {
   #about {
+    padding: 56px 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  #about h2 {
+    font-size: 28px;
+  }
+
+  #about .left {
+    margin-bottom: 0;
   }
 
   #about .left,

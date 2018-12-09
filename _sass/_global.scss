@@ -18,17 +18,15 @@ html {
   -moz-osx-font-smoothing: grayscale;
   color: #3D474D;
   height: 100%;
+  font-size: 16px;
 }
 
 body {
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 #main {
-  padding-top: 88px;
-  flex-grow: 1;
+  padding-top: 72px;
 }
 
 a {
@@ -50,8 +48,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-
 
 h1,
 h2,
@@ -99,7 +95,6 @@ h6 {
   margin: 0 auto;
   padding: 56px 48px;
 }
-
 @media (min-width:48em) {
   body,
   html {
@@ -107,11 +102,21 @@ h6 {
     line-height: 32px;
   }
 
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main {
+    padding-top: 88px;
+    flex-grow: 1;
+  }
+
   h2 {
-    font-size: 2em;
+    font-size: 32px;
   }
 }
-@media (max-width:48em) {
+@media (max-width:47.99em) {
   body {
     min-width: 320px;
   }
