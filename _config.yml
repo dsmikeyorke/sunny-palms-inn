@@ -1,4 +1,4 @@
-title: Malibu Resort Motel
+title: Sunny Palms Inn
 email:
 description:
 url: localhost:4000
@@ -13,7 +13,6 @@ exclude:
 collections:
   rooms:
     output: false
-
 
 sass:
   style: compact # possible values: nested expanded compact compressed
