@@ -56,7 +56,8 @@
 }
 
 #header nav a.current {
-  color: #E6177A;
+  // color: #E6177A;
+  border-bottom: 1px solid;
 }
 /* Mobile Menu */
 @media (min-width:48em) {

@@ -10,13 +10,25 @@
   <div id="{{room.title | slugify}}">
     <div class="left">
       <div class="flexslider">
-        <ul class="slides"> {% for image in room.images %} <li><img src="{{ image }}"></li> {% endfor %} </ul>
+        <ul class="slides">
+          {% for image in room.images %}
+          <li><img src="{{ image }}"></li>
+          {% endfor %}
+        </ul>
       </div>
       <div class="field-body">
         {{ room.content }}
       </div>
     </div>
-    <div class="right">{% include amenities.html %} </div>
+    <div class="right">
+      <div class="field-amenities">
+        <!-- <h3 class="field-label">Amenities</h3> -->
+        <ul class="field-amenities">
+          {% for amenitie in room.amenities %}
+          <li>{{ amenitie }} {% endfor %}</li>
+        </ul>
+      </div>
+    </div>
   </div>
   {% endfor %}
 </div>
