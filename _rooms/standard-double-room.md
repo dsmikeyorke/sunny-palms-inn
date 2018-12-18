@@ -2,7 +2,7 @@
 layout: default
 title: Standard Double Room
 images:
-  - /assets/images/rooms/queen-bed.jpg
+  - assets/images/rooms/queen-bed.jpg
 amenities:
   - 2 Full Beds
   - Flat Screen TV + DirecTV
