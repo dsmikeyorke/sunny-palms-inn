@@ -28,6 +28,10 @@
     text-decoration: none;
     color: #3D474D;
   }
+
+  img {
+    width: 240px;
+  }
 }
 
 #header nav ul {
@@ -56,7 +60,7 @@
 }
 
 #header nav a.current {
-  // color: #E6177A;
+  // color: #D21013;
   border-bottom: 1px solid;
 }
 /* Mobile Menu */
@@ -76,6 +80,10 @@
 
   #header .branding {
     font-size: 28px;
+
+    img {
+      width: 330px;
+    }
   }
 }
 @media (max-width:47.99em) {
