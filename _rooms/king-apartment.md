@@ -2,7 +2,7 @@
 layout: default
 title: King Apartment
 images:
-  - https://via.placeholder.com/546x358
+  - assets/images/rooms/coming-soon.jpg
 amenities:
   - 1 King Bed
   - Flat Screen TV + DirecTV
