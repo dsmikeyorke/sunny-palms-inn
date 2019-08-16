@@ -1,32 +1,102 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="canonical" href="{{ site.url }}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/assets/css/styles.css' | relative_url }}"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="shortcut icon" href="favicon.ico">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ site.description }}" />
-  <link rel="canonical" href="{{ site.url }}" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | relative_url }}">
-</head>
+  <body
+    {%
+    if
+    page.body_classes
+    %}
+    class="{{ page.body_classes }}"
+    {%
+    endif
+    %}
+    id="top"
+  >
+    {% include header.html %}
+    <main id="main">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    <!-- Scripts -->
 
-<body {% if page.body_classes %} class="{{ page.body_classes }}" {% endif %} id="top">
-  {% include header.html %}
-  <main id="main">
-    {{ content }}
-  </main>
-  {% include footer.html %}
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="{{ '/assets/js/jquery.flexslider-min.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/jquery.responsiveTabs.min.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/jquery.singlePageNav.min.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/matchMedia.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/owl.carousel.min.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/typer.min.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
-</body>
-
+    <script>
+      (function(document, tag) {
+        var script = document.createElement(tag);
+        var element = document.getElementsByTagName("body")[0];
+        script.src = "https://acsbap.com/api/app/assets/js/acsb.js";
+        script.async = true;
+        script.defer = true;
+        (typeof element === "undefined"
+          ? document.getElementsByTagName("html")[0]
+          : element
+        ).appendChild(script);
+        script.onload = function() {
+          acsbJS.init({
+            statementLink: "",
+            feedbackLink: "",
+            footerHtml: "",
+            hideMobile: false,
+            hideTrigger: false,
+            handleJquery: false,
+            language: "en",
+            position: "right",
+            leadColor: "#146FF8",
+            triggerColor: "#146FF8",
+            triggerRadius: "50%",
+            triggerPositionX: "right",
+            triggerPositionY: "bottom",
+            triggerIcon: "default",
+            triggerSize: "medium",
+            triggerOffsetX: 20,
+            triggerOffsetY: 20,
+            usefulLinks: {},
+            mobile: {
+              triggerSize: "small",
+              triggerPositionX: "right",
+              triggerPositionY: "bottom",
+              triggerOffsetX: 0,
+              triggerOffsetY: 0,
+              triggerRadius: "0"
+            }
+          });
+        };
+      })(document, "script");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="{{
+        '/assets/js/jquery.flexslider-min.js' | relative_url
+      }}"></script>
+    <script src="{{
+        '/assets/js/jquery.responsiveTabs.min.js' | relative_url
+      }}"></script>
+    <script src="{{
+        '/assets/js/jquery.singlePageNav.min.js' | relative_url
+      }}"></script>
+    <script src="{{ '/assets/js/matchMedia.js' | relative_url }}"></script>
+    <script src="{{
+        '/assets/js/owl.carousel.min.js' | relative_url
+      }}"></script>
+    <script src="{{ '/assets/js/typer.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+  </body>
 </html>
